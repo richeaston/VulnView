@@ -1,0 +1,12 @@
+https://www.us-cert.gov/ncas/alerts.xml
+https://www.us-cert.gov/ncas/current-activity.xml
+https://www.us-cert.gov/ncas/bulletins.xml
+https://threatpost.com/category/vulnerabilities/feed
+https://krebsonsecurity.com/feed/
+https://nakedsecurity.sophos.com/feed
+https://www.ncsc.gov.uk/blogs-feed-topic/310
+https://rss.packetstormsecurity.com/files/tags/vulnerability/
+https://rss.packetstormsecurity.com/files/os/7/
+https://rss.packetstormsecurity.com/files/os/windows/
+http://feeds.feedburner.com/SansInstituteSecLab
+https://www.securitymagazine.com/rss/15

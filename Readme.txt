@@ -1,0 +1,1 @@
+for feed admin to work correctly, make the feeds.txt read/writable or chmod 755
