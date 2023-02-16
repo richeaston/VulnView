@@ -1,14 +1,14 @@
-# Vulnview
+# Vulnview #
 
-##Purpose of vulnview
+## Purpose of vulnview ##
 To collate RSS fedds from multiple sites / vendors, making it easier to identify patch and vulnerability alerts without trawling through multiple sites.
 
-written using PHP, I've tried to keep it lightweight, so it doesn't require any sort of DB, and the powershell script using 'invoke-webrequest' to retrieve the feeds from the websites.
+Written using PHP, I've tried to keep it lightweight, so it doesn't require any sort of DB, and the powershell script using 'invoke-webrequest' to retrieve the feeds from the websites.
 
-###Adding new feeds
+### Adding new feeds ###
 Use 'Feed Admin' and just add the new feed in this format [title],[feed url] (e.g. Krebs,https://krebsonsecurity.com/feed/) the PHP will explode the list item and process the feed accordingly.
 
-##Output
+## Output ##
 This is the sort of output you can expect.
 
 
