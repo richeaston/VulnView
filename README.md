@@ -14,8 +14,3 @@ This is the sort of output you can expect.
 ![Image](https://github.com/richeaston/VulnView/blob/master/vulnview.jpg?raw=true "Example Output")
 
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
