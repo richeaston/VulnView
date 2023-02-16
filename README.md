@@ -11,7 +11,7 @@ Use **'Feed Admin'** and just add the new feed in this format **[title],[feed ur
 ## Output ##
 This is the sort of output you can expect.
 
-<img src="https://github.com/richeaston/VulnView/blob/master/vulnview.jpg" alt="Example Output">
+![Image](https://github.com/richeaston/VulnView/blob/master/vulnview.jpg?raw=true "Example Output")
 
 
 **Bold** and _Italic_ and `Code` text
