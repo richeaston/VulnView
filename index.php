@@ -8,7 +8,7 @@
 			$line = explode(",", $feedline);
 			$path = "feeds/" . $line[0] . ".xml";
 			// Get the last modified time of the file
-			$last_modified = filemtime($path);
+			$last_modified = @filemtime($path);
 
 			// Convert the Unix timestamp to a human-readable format
 			$last_modified_formatted = date('d-m-Y H:i:s', $last_modified);
@@ -27,7 +27,7 @@
 							//$rss->load($line[1]);
 							$rss->load($path);
 							$feed = array();
-							
+
 							foreach ($rss->getElementsByTagName('item') as $node) {
 								$item = array(
 									'title' => $node->getElementsByTagName('title')->item(0)->nodeValue,
@@ -61,12 +61,24 @@
 								//echo $days;
 
 
-								if ($days <= 3) {
+								if ($days < 3) {
 									echo '<div class="newalert"><strong><a href="' . $link . '" title="' . $title . '" target="_blank">' . $title . '</a></strong><br />';
-									echo '<small><em>Posted on ' . date('d-m-Y', strtotime($feed[$x]['date'])) . '</em></small></div>';
+									if ( $days <= 0 ) {
+										echo '<small><em>Posted on ' . date('d-m-Y', strtotime($feed[$x]['date'])) .  '</em></small></div>';
+									} elseif ($days > 1 ) {
+										echo '<small><em>Posted on ' . date('d-m-Y', strtotime($feed[$x]['date'])) .  ' - ' . $days . ' days ago.</em></small></div>';
+									} else {
+										echo '<small><em>Posted on ' . date('d-m-Y', strtotime($feed[$x]['date'])) .  ' - ' . $days . ' day ago.</em></small></div>';
+									}
 								} else {
-									echo '<div class="normalert"><strong><a href="' . $link . '" title="' . $title . '"  target="_blank">' . $title . '</a></strong><br />';
-									echo '<small><em>Posted on ' . date('d-m-Y', strtotime($feed[$x]['date'])) . '</em></small></div>';
+									echo '<div class="normalert fade-in"><strong><a href="' . $link . '" title="' . $title . '"  target="_blank">' . $title . '</a></strong><br />';
+									if ( $days <= 0 ) {
+										echo '<small><em>Posted on ' . date('d-m-Y', strtotime($feed[$x]['date'])) .  '</em></small></div>';
+									} elseif ($days > 1 ) {
+										echo '<small><em>Posted on ' . date('d-m-Y', strtotime($feed[$x]['date'])) .  ' - ' . $days . ' days ago.</em></small></div>';
+									} else {
+										echo '<small><em>Posted on ' . date('d-m-Y', strtotime($feed[$x]['date'])) .  ' - ' . $days . ' day ago.</em></small></div>';
+									}
 								}
 							}
 							?>
