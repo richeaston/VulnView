@@ -1,12 +1,8 @@
+AskWoody,https://www.askwoody.com/feed/
 Bleeping Computer,https://www.bleepingcomputer.com/feed/
-Ivanti,https://www.ivanti.com/blog/topics/patch-tuesday/rss
-MSRC,https://api.msrc.microsoft.com/update-guide/rss
-Krebs,https://krebsonsecurity.com/feed/
-PS-Vulns,https://rss.packetstormsecurity.com/files/tags/vulnerability/
-Sophos,https://nakedsecurity.sophos.com/feed
-SecMag,https://www.securitymagazine.com/rss/15
+DarkReading,https://www.darkreading.com/rss.xml
 Tenable,https://www.tenable.com/security/feed
+TheHackerNews,https://feeds.feedburner.com/TheHackersNews
+PatchMyPC,https://patchmypc.com/category/catalog-updates/feed
+SecMag,https://www.securitymagazine.com/rss/15
 US-Cert Alerts,https://www.us-cert.gov/ncas/alerts.xml
-US-Cert Activity,https://www.us-cert.gov/ncas/current-activity.xml
-US-Cert Bulletin,https://www.us-cert.gov/ncas/bulletins.xml
-ZDI,https://www.zerodayinitiative.com/rss/published/

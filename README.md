@@ -1,16 +1,37 @@
-# Vulnview #
+## Welcome to GitHub Pages
 
-## Purpose of vulnview ##
-To collate RSS fedds from multiple sites / vendors, making it easier to identify patch and vulnerability alerts without trawling through multiple sites.
+You can use the [editor on GitHub](https://github.com/richeaston/VulnView/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
-Written using `PHP`, I've tried to keep it lightweight, so it doesn't require any sort of DB, and the powershell script using '`invoke-webrequest`' to retrieve the feeds from the websites.
+Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Adding new feeds ###
-Use the **'clipboard icon'** in the title, or you can uncomment the **'Feed Admin'** button, and just add the new feed in this format **[title],[feed url]** (e.g. Krebs,https://krebsonsecurity.com/feed/) the PHP will explode the list item and process the feed accordingly.
+### Markdown
 
-## Output ##
-This is the sort of output you can expect.
+Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-![Image](https://github.com/richeaston/VulnView/blob/master/vulnview.jpg?raw=true "Example Output")
+```markdown
+Syntax highlighted code block
 
+# Header 1
+## Header 2
+### Header 3
 
+- Bulleted
+- List
+
+1. Numbered
+2. List
+
+**Bold** and _Italic_ and `Code` text
+
+[Link](url) and ![Image](src)
+```
+
+For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
+
+### Jekyll Themes
+
+Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/richeaston/VulnView/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+
+### Support or Contact
+
+Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
